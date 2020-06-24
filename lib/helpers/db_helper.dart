@@ -11,7 +11,10 @@ class DbHelper {
           CREATE TABLE $table (
             id TEXT PRIMARY KEY,
             title TEXT,
-            image TEXT
+            image TEXT,
+            loc_lat REAL,
+            loc_lng REAL,
+            address TEXT
           )
         ''');
     }, version: 1);
